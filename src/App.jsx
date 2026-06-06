@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import MobileActionBar from "./components/MobileActionBar";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import AppRoutes from "./routes/AppRoutes";
 
@@ -18,7 +19,9 @@ function App() {
       <WhatsAppButton />
       <MobileActionBar />
       <Footer />
+
       <Analytics />
+      <SpeedInsights/>
     </div>
   );
 }
