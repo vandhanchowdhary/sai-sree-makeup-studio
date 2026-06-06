@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import MobileActionBar from "./components/MobileActionBar";
+import { Analytics } from "@vercel/analytics/next";
 
 import AppRoutes from "./routes/AppRoutes";
 
@@ -17,6 +18,7 @@ function App() {
       <WhatsAppButton />
       <MobileActionBar />
       <Footer />
+      <Analytics />
     </div>
   );
 }
