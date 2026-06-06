@@ -4,7 +4,7 @@ const faqs = [
     answer: "We recommend booking at least 1–2 months in advance.",
   },
   {
-    question: "Do you provide venue services?",
+    question: "Do you provide services at venues?",
     answer: "Yes, bridal makeup services are available at wedding venues.",
   },
   {

@@ -6,7 +6,7 @@ const BookingForm = () => {
           Book Appointment
         </h2>
 
-        <form className="mt-10 space-y-5">
+        <form onSubmit={(e) => e.preventDefault()} className="mt-10 space-y-5">
           <input
             type="text"
             placeholder="Full Name"
