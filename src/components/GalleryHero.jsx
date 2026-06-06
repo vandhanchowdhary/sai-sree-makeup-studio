@@ -7,8 +7,8 @@ const GalleryHero = () => {
         <h1 className="mt-4 font-heading text-5xl font-bold">Bridal Gallery</h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-gray-300">
-          A collection of bridal transformations crafted with passion, elegance,
-          and attention to detail.
+          Explore our collection of bridal transformations, crafted to
+          highlight natural beauty while creating timeless elegance and attention to detail.
         </p>
       </div>
     </section>

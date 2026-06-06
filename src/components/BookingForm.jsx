@@ -6,30 +6,43 @@ const BookingForm = () => {
           Book Appointment
         </h2>
 
-        <form onSubmit={(e) => e.preventDefault()} className="mt-10 space-y-5">
+        <form onSubmit={(e) => e.preventDefault()} className="mt-10">
           <input
             type="text"
+            name="client-name"
             placeholder="Full Name"
-            className="w-full rounded-xl border p-4"
+            className="w-full rounded-xl border p-4 my-2"
           />
 
           <input
             type="tel"
             placeholder="Phone Number"
-            className="w-full rounded-xl border p-4"
+            name="client-phone-number"
+            className="w-full rounded-xl border p-4 my-2"
           />
 
-          <input type="date" className="w-full rounded-xl border p-4" />
+          <label
+            htmlFor="booking-date"
+            className="block w-full my-2 pl-4 text-[#6a6b6b]"
+          >
+            Preferred Booking Date & Time
+          </label>
+          <input
+            type="datetime-local"
+            id="booking-date"
+            className="w-full rounded-xl border px-4 py-3 mb-2"
+          />
 
           <textarea
             rows="5"
             placeholder="Tell us about your event..."
-            className="w-full rounded-xl border p-4"
+            name="event-details"
+            className="w-full rounded-xl border p-4 my-2"
           />
 
           <button
             type="submit"
-            className="w-full rounded-xl bg-[#D9B15A] py-4 text-white"
+            className="w-full rounded-xl bg-[#D9B15A] py-4 text-white my-2"
           >
             Submit Inquiry
           </button>

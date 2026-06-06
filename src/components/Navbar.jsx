@@ -58,7 +58,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     `font-medium transition ${
                       isActive
-                        ? "text-[#D9B15A]"
+                        ? "text-[#D9B15A] font-semibold shadow p-2 rounded-3xl "
                         : "text-[#0F1C2E] hover:text-[#D9B15A]"
                     }`
                   }
