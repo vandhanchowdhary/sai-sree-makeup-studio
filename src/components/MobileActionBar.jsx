@@ -1,6 +1,7 @@
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
 const MobileActionBar = () => {
+  const message = `Hi Renuka, I am interested in your makeup services`;
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 h-14 flex md:hidden">
       <a
@@ -12,7 +13,7 @@ const MobileActionBar = () => {
       </a>
 
       <a
-        href="https://wa.me/919951743400"
+        href={`https://wa.me/919951743400?text=${encodeURIComponent(message)}`}
         target="_blank"
         rel="noopener noreferrer"
         className="flex-1 bg-green-500 py-2 text-center text-white"

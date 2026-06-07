@@ -13,7 +13,7 @@ const stats = [
   },
   {
     number: "Yes",
-    label: "Venue Services",
+    label: "Available",
   },
 ];
 

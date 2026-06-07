@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
@@ -14,7 +14,12 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const message = `Hi Renuka, I am interested in your makeup services`;
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+  }, [isOpen]);
 
   return (
     <>
@@ -54,7 +59,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     `font-medium transition ${
                       isActive
-                        ? "text-[#D9B15A]"
+                        ? "text-[#D9B15A] font-semibold shadow p-2 rounded-3xl "
                         : "text-[#0F1C2E] hover:text-[#D9B15A]"
                     }`
                   }
@@ -64,7 +69,7 @@ const Navbar = () => {
               ))}
 
               <a
-                href="https://wa.me/919951743400"
+                href={`https://wa.me/919951743400?text=${encodeURIComponent(message)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full bg-[#D9B15A] px-5 py-2 font-medium text-white transition hover:scale-105"
@@ -125,7 +130,7 @@ const Navbar = () => {
                 ))}
 
                 <a
-                  href="https://wa.me/919951743400"
+                  href={`https://wa.me/919951743400?text=${encodeURIComponent(message)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 rounded-full bg-[#D9B15A] px-6 py-3 text-center text-white"
