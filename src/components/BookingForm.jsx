@@ -42,9 +42,7 @@ const BookingForm = () => {
     Please contact me regarding your availability.
     `;
 
-    const whatsappUrl = `https://wa.me/919951743400?text=${encodeURIComponent(
-      message,
-    )}`;
+    const whatsappUrl = `https://wa.me/919951743400?text=${encodeURIComponent(message,)}`;
 
     window.open(whatsappUrl, "_blank");
     setFormData({

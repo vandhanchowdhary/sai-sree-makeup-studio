@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import bridalImage from "../assets/images/bridal-1.jpg";
 
 const Hero = () => {
+  const message = `Hi Renuka, I am interested in your makeup services`;
   return (
     <section className="relative overflow-hidden bg-[#F8F5EF]">
       <div className="max-w-7xl mx-auto">
@@ -74,7 +75,7 @@ const Hero = () => {
               className="mt-8 flex flex-col gap-4 sm:flex-row"
             >
               <a
-                href="https://wa.me/919951743400"
+                href={`https://wa.me/919951743400?text=${encodeURIComponent(message)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full bg-[#D9B15A] px-8 py-4 text-center font-medium text-white transition hover:scale-105"

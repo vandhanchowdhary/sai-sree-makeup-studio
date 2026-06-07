@@ -14,8 +14,9 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const message = `Hi Renuka, I am interested in your makeup services`;
   const [isOpen, setIsOpen] = useState(false);
-  
+
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
   }, [isOpen]);
@@ -68,7 +69,7 @@ const Navbar = () => {
               ))}
 
               <a
-                href="https://wa.me/919951743400"
+                href={`https://wa.me/919951743400?text=${encodeURIComponent(message)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full bg-[#D9B15A] px-5 py-2 font-medium text-white transition hover:scale-105"
@@ -129,7 +130,7 @@ const Navbar = () => {
                 ))}
 
                 <a
-                  href="https://wa.me/919951743400"
+                  href={`https://wa.me/919951743400?text=${encodeURIComponent(message)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 rounded-full bg-[#D9B15A] px-6 py-3 text-center text-white"
